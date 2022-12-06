@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\SigninController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,14 +17,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('homepage');
+    return view('landingpage');
 });
 Route::get('/login', function () {
     return view('login');
 });
 
-Route::get('/signin', function () {
-    return view('signin');
+Route::get('/homepage', function () {
+    return view('homepage');
 });
 
+Route::get('/login',[LoginController::class,'index']);
+Route::post('/login',[LoginController::class,'authenthicate']);
+
+Route::get('/signin',[SigninController::class,'index']);
+Route::post('/signin',[SigninController::class,'store']);
 

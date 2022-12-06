@@ -140,6 +140,11 @@
       text-decoration: none;
       margin:20px 0;
   }
+
+  .invalid-feedback{
+    font-size: 24px;
+    text-transform: capitalize;
+  }
   
   @media only screen and (max-width: 960px) {
       

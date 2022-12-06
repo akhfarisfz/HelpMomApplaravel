@@ -10,12 +10,12 @@
 <body>
     <div class="container">
         <nav class="nav">
-            <a href="#"class="namelogo"><img class="logo" src="Asset/kitchen.png"   >Help Mom App</a>
+            <a href="#" class="namelogo"><img class="logo" src="Asset/kitchen.png"   >Help Mom App</a>
             <ul>
-                {{-- <li><a href="/login">Login</a></li> --}}
-                <li><a href="#">Hi,{{ auth()->User()->username }}</a></li>
-                {{-- <li><a href="#">Dining</a></li>
-                <li><a href="#">Kitchen</a></li>  --}}
+                <li><a href="/login">Login</a></li>
+                {{-- <li><a href="#">Recipe</a></li>
+                <li><a href="#">Dining</a></li>
+                <li><a href="#">Kitchen</a></li> --}}
                 <li><a href="#">About</a></li>
             </ul>
         </nav>
