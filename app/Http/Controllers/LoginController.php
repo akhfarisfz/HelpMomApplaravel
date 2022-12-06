@@ -20,8 +20,6 @@ class LoginController extends Controller
             'password'=>'required'
         ]);
 
-        // dd($credentials);
-
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();                                                   
             return redirect()->intended('/homepage');

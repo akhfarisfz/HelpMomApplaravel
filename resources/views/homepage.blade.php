@@ -14,9 +14,9 @@
             <ul>
                 {{-- <li><a href="/login">Login</a></li> --}}
                 <li><a href="#">Hi,{{ auth()->User()->username }}</a></li>
-                {{-- <li><a href="#">Dining</a></li>
-                <li><a href="#">Kitchen</a></li>  --}}
+                {{-- <li><a href="#">Dining</a></li> --}}
                 <li><a href="#">About</a></li>
+                <li><a href="\logout">Logout</a></li> 
             </ul>
         </nav>
         <div class="content">

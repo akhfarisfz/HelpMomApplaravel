@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\SigninController;
+use App\Http\Controllers\HomePageController;
 
 
 /*
@@ -32,4 +33,6 @@ Route::post('/login',[LoginController::class,'authenthicate']);
 
 Route::get('/signin',[SigninController::class,'index']);
 Route::post('/signin',[SigninController::class,'store']);
+
+Route::get('/logout',[HomePageController::class,'logout'])->middleware('auth');
 
